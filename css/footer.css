@@ -7,6 +7,23 @@
     padding: 100px 0;
   }
 }
+@media only screen and (min-width: 768px) {
+  .container-footer {
+    padding-block: 0;
+    padding-inline: 108px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .container-footer {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    max-width: 1158px;
+
+    padding-inline: 0;
+    padding: 0 15px;
+  }
+}
 .footer-link {
   font-weight: 700;
   font-size: 18px;
@@ -15,53 +32,33 @@
   text-transform: uppercase;
   color: #f4f4fd;
 }
-.footer-top {
-  display: flex;
 
-  align-items: center;
-  flex-direction: column;
-  gap: 72px;
-}
-@media only screen and (min-width: 768px) {
-  .footer-top {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-
-    padding-block: 0;
-    padding-inline: 108px;
-
-    gap: 24px;
-  }
-}
-@media only screen and (min-width: 1158px) {
-  .footer-top {
-    padding: 0;
-    /*gap: 120px;*/
-  }
-}
 .fotter-left {
   max-width: 288px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  margin-bottom: 72px;
+
   gap: 16px;
 }
 @media only screen and (min-width: 768px) {
   .fotter-left {
+    max-width: 264px;
+
+    display: inline-flex;
     align-items: flex-start;
+
+    gap: 16px;
   }
 }
 @media only screen and (min-width: 1158px) {
   .fotter-left {
-    max-width: 264px;
     margin-right: 120px;
   }
 }
 .footer-tetx {
-  margin-top: 16px;
   color: #f4f4fd;
 }
 .social {
@@ -80,12 +77,22 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  margin-bottom: 72px;
   gap: 16px;
 }
 @media only screen and (min-width: 768px) {
   .footer-right {
+    max-width: 208px;
+    display: inline-flex;
     align-items: flex-start;
-    margin: 0;
+
+    margin-left: 24px;
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .footer-right {
+    display: inline-flex;
   }
 }
 /* footer form*/
@@ -108,8 +115,14 @@
 }
 @media only screen and (min-width: 1158px) {
   .form-footer {
+    max-width: 453px;
     margin-left: auto;
     margin-right: 0;
+
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 .footer-form {
@@ -126,7 +139,15 @@
     gap: 24px;
   }
 }
-
+@media only screen and (min-width: 1158px) {
+  .footer-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
 .footer-form-input {
   width: 264px;
   padding-block: 8px;

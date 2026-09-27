@@ -8,11 +8,16 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 24px;
+  gap: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-list {
+    gap: 72px 24px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .portfolio-list {
-    row-gap: 48px;
+    row-gap: 72px;
   }
 }
 .portfolio-item {
