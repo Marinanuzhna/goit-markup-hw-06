@@ -1,6 +1,11 @@
 .footer {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: #2e2f42;
+}
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
 }
 .footer-link {
   font-weight: 700;
@@ -12,15 +17,49 @@
 }
 .footer-top {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
+
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-top {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    padding-block: 0;
+    padding-inline: 108px;
+
+    gap: 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .footer-top {
+    padding: 0;
+    /*gap: 120px;*/
+  }
 }
 .fotter-left {
-  max-width: 264px;
-  margin-right: 120px;
+  max-width: 288px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
 }
-
+@media only screen and (min-width: 768px) {
+  .fotter-left {
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .fotter-left {
+    max-width: 264px;
+    margin-right: 120px;
+  }
+}
 .footer-tetx {
   margin-top: 16px;
   color: #f4f4fd;
@@ -37,16 +76,57 @@
   background-color: #31d0aa;
 }
 .footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-right {
+    align-items: flex-start;
+    margin: 0;
+  }
 }
 /* footer form*/
 .form-footer {
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-left: 0;
   margin-right: 0;
+}
+@media only screen and (min-width: 768px) {
+  .form-footer {
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .form-footer {
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
 .footer-form {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
 }
+@media only screen and (min-width: 768px) {
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
 .footer-form-input {
   width: 264px;
   padding-block: 8px;

@@ -1,0 +1,120 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #fff;
+
+  transform: translateX(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  padding-block: 72px 40px;
+  padding-inline: 16px;
+  height: 100%;
+}
+.mobil-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border, background-color;
+}
+.header .mobil-menu-btn {
+  margin-left: auto;
+}
+@media only screen and (min-width: 768px) {
+  .header .mobil-menu-btn {
+    display: none;
+  }
+}
+.mobile-menu .mobil-menu-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 24px;
+}
+.mobile-menu:hover .mobil-menu-btn,
+.mobile-menu:focus .mobil-menu-btn {
+  border: 1px solid #404bbf;
+  background-color: #404bbf;
+}
+.mobil-menu-btn-icon {
+}
+.mobil-menu-btn {
+}
+.mobil-menu-btn-icon {
+}
+.mobile-menu-list {
+  margin-bottom: auto;
+}
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 48px;
+}
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+
+  color: #2e2f42;
+}
+.contacts {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  width: 193px;
+  height: 72px;
+}
+.mobile-contacts {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.mobile-social-list {
+  gap: 40px;
+}
+.mobile-menu-link.active {
+  color: #404bbf;
+}
+.mobile-social {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  max-width: 288px;
+  gap: 40px;
+}
