@@ -47,10 +47,15 @@
 
   padding-block: 5px;
   padding-inline: 4px;
+  margin-left: auto;
 }
 
 .header .mobil-menu-btn {
   margin-left: auto;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 @media only screen and (min-width: 768px) {
   .header .mobil-menu-btn {
@@ -61,6 +66,9 @@
   position: absolute;
   top: 24px;
   right: 24px;
+
+  padding-block: 5px;
+  padding-inline: 4px;
 
   width: 24px;
   height: 24px;
@@ -122,6 +130,22 @@
   font-size: 20px;
   line-height: 1.2;
   color: #434455;
+}
+@media only screen and (min-width: 768px) {
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .contacts-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
 }
 .active_a {
   color: #4d5ae5;

@@ -15,6 +15,7 @@
 }
 @media only screen and (min-width: 1158px) {
   .container-footer {
+    display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
@@ -56,6 +57,7 @@
 @media only screen and (min-width: 1158px) {
   .fotter-left {
     margin-right: 120px;
+    margin-bottom: 0;
   }
 }
 .footer-tetx {
@@ -93,6 +95,7 @@
 @media only screen and (min-width: 1158px) {
   .footer-right {
     display: inline-flex;
+    margin-bottom: 0;
   }
 }
 /* footer form*/
@@ -115,7 +118,6 @@
 }
 @media only screen and (min-width: 1158px) {
   .form-footer {
-    max-width: 453px;
     margin-left: auto;
     margin-right: 0;
 

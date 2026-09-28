@@ -17,7 +17,7 @@
 }
 @media only screen and (min-width: 1024px) {
   .portfolio-list {
-    row-gap: 72px;
+    row-gap: 48px;
   }
 }
 .portfolio-item {
