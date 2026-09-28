@@ -51,17 +51,32 @@
 .main-nav-link:focus {
   color: #404bbf;
 }
-
 .contacts-list {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+}
+@media only screen and (min-width: 768px) {
+  .contacts-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 12px 0;
+  }
 }
 @media only screen and (min-width: 1158px) {
   .contacts-list {
     display: flex;
     align-items: center;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
     gap: 40px;
   }
 }

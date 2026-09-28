@@ -30,6 +30,7 @@
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
+  margin: 0 auto;
   text-transform: uppercase;
   color: #f4f4fd;
 }
@@ -37,7 +38,7 @@
 .fotter-left {
   max-width: 288px;
   display: flex;
-  align-items: center;
+
   justify-content: flex-start;
   flex-direction: column;
   margin-bottom: 72px;
@@ -132,6 +133,10 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+
+  width: 100%;
+  max-width: 288px;
+
   gap: 16px;
 }
 @media only screen and (min-width: 768px) {
@@ -151,7 +156,9 @@
   }
 }
 .footer-form-input {
-  width: 264px;
+  width: 100%;
+  max-width: 288px;
+  /*max-width: 264px;*/
   padding-block: 8px;
   padding-inline: 16px;
 
