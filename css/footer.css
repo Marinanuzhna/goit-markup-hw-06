@@ -9,6 +9,11 @@
 }
 @media only screen and (min-width: 768px) {
   .container-footer {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+
     padding-block: 0;
     padding-inline: 108px;
   }
@@ -30,7 +35,7 @@
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
-  margin-left: 74.5px;
+  margin: auto;
   text-transform: uppercase;
   color: #f4f4fd;
 }
@@ -72,10 +77,9 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #fff;
   margin-bottom: 16px;
-  margin-left: 56px;
-  margin-right: 56px;
 }
 .footer .social-link:hover,
 .footer .social-link:focus {
