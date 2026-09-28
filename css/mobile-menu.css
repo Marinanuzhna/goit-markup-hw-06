@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: column;
   padding-block: 72px 40px;
+  padding-inline: 16px;
   height: 100%;
 }
 .mobil-menu-btn {
@@ -109,6 +110,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+
+  padding: 0;
+
   gap: 48px;
 }
 .mobile-menu-link {
@@ -149,6 +153,12 @@
     letter-spacing: 0.02em;
     color: #434455;
   }
+}
+.contacts-list-mobile {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .active_a {
   color: #4d5ae5;
