@@ -80,6 +80,11 @@
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 24px;
 }
+@media only screen and (min-width: 768px) {
+  .mobile-menu .mobil-menu-btn {
+    display: none;
+  }
+}
 .mobile-menu:hover .mobil-menu-btn,
 .mobile-menu:focus .mobil-menu-btn {
   border: 1px solid #404bbf;
@@ -87,6 +92,16 @@
 }
 .mobil-menu-btn-icon {
   color: #2e2f42;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .mobil-menu-btn-icon {
+    display: none;
+  }
 }
 .mobile-main-nav {
   display: flex;
