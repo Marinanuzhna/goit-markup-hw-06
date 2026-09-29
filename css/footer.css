@@ -51,6 +51,8 @@
 @media only screen and (min-width: 1158px) {
   .footer-link {
     margin-left: 0;
+    margin-bottom: 16px;
+    margin-top: 0;
   }
 }
 .fotter-left {
